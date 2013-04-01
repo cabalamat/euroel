@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# run = run New Euro Election program
+
+. venv/bin/activate
+python main.py
+
+#end

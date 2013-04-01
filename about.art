@@ -1,0 +1,165 @@
+$$$$$ About Euro Election 2014
+
+*Euro Election 2014* is a site for the next European Parliamentary election,
+which will be held in June 2014.
+
+Currently, the site focuses on the United Kingdom.
+
+## Credits
+
+*Euro Election 2014* is built using free and open source software (FOSS).
+
+The main site is written in [Python](http://www.python.org/)
+using the [Flask](http://flask.pocoo.org/) lightweight web framework. On
+the front end it uses
+[Bootstrap](http://twitter.github.com/bootstrap/).
+It runs on the [Apache](http://httpd.apache.org/) webserver
+which itself runs on the [Linux](http://en.wikipedia.org/wiki/Linux_kernel)
+kernel.
+
+The blog is [Wordpress](http://wordpress.org/),
+which is written in [PHP](http://en.wikipedia.org/wiki/PHP),
+and uses the [MySQL](http://en.wikipedia.org/wiki/MySQL) database.
+
+Some features of the site are based on suggestions from people at
+[Reddit](http://www.reddit.com/),
+particularly the [r/ukpolitics](http://www.reddit.com/r/ukpolitics/) community.
+
+## Questions?
+
+This site has a [FAQ](/article/frequently_asked_questions) which may
+answer your question.
+
+## Contact us
+
+If you have any comments about the site, we'd be delighted to hear them.
+You can email us at ``euroelection@gmail.com``.
+
+$$$$$ Frequently Asked Questions
+
+*If you have any questions that aren't listed here you can send them to*
+``euroelection@gmail.com`` *and we'll do our best to answer them.*
+
+### What's this site about?
+
+The election of the European Parliament, in June 2014. All 27 countries
+in the European Union will be electing their representatives. However,
+this site only covers the UK.
+
+### When will the election be?
+
+In June 2014. We don't know the exact date yet. According to the
+[Electoral Commission](http://www.electoralcommission.org.uk/faq/elections/when-will-the-next-european-parliamentary-elections-be-held):
+
+> The next European Parliamentary elections are expected to be held in 2014, but the date won’t be confirmed until an order from the Secretary of State is made.
+
+Elections in the UK are by tradition (but not by law) held on a Thursday.
+The first Thursday in June 2014 is the 5th, so that's probably when the
+election will be held in the UK. Other EU states will hold the election on
+different days, for example some hold elections on a Saturday or
+Sunday.
+
+### What voting system is used?
+
+[Northern Ireland](/eresult/ni) uses [[Single Transferable Vote]]. The
+[other 11 regions of the UK](/eresult/gb) use
+[[d'Hondt]] closed lists.
+
+### Who is my MEP?
+
+Actually you have between 3 (if you live in
+[Northern Ireland](/eresult/ni) or
+[North West England](/eresult/nwe))
+and 10 (if you live in [South East England](/eresult/see)).
+
+This site doesn't list MEPs yet.
+
+To find out what electoral region you live in, use the [MapIt](http://mapit.mysociety.org/) website.
+Then go to [Wikipedia](http://en.wikipedia.org/wiki/European_Parliament_election,_2009_%28United_Kingdom%29#Constituencies_and_representation), and click the link to your electoral region and you'll find
+who your MEPs are.
+
+### Which electoral region do I live in?
+
+To find out what electoral region you live in, go onto the
+[MapIt](http://mapit.mysociety.org/) website,
+and type in your postcode. It will then tell you what region you are in for all sorts of
+elections.
+
+### What decisions does the European Union actually make?
+
+### How do things become European law?
+
+### What powers do MEPs actually have?
+
+$$$$$ Single Transferable Vote
+
+**Single Transferable Vote** or **STV** is the election system used to elect MEPs
+[Northern Ireland](/eresult/ni). The rest of the UK uses [[d'Hondt]].
+
+STV is also used to elect MEPs from Ireland and Malta; all other EU member states use list system. In the UK, STV is also used in Scottish and Northern Irish local government, and to elect the Northern Ireland Assembly.
+
+## What is STV?
+
+STV is a way of electing more than one candidate. Typically STV is used to elect 2-7 candidates; for larger numbers than that, it starts to get unwieldy. STV aims at electing those candidates such that all the voters’ preferences are most satisfied.  Of course, it would be impossible to elect candidates that completely satisfy this criterion, without every voter being their own candidate, but STV is generally held to be the best system for electing a small number of candidates.
+
+Because STV is slightly complicated, I'll explain it by way of explaining a similar, but simpler system first, the *Alternative Vote*.
+
+### What is the Alternative Vote?
+
+The Alternative Vote -- usually abbeviated AV -- is a way of electing one candidate to a position. I said earlier that STV is for electing 2 or more candidates; that’s not quite true, STV can be used to elect one candidate, and when that is done is it called AV. AV is therefore a special case of STV when only one candidate is being elected.
+
+## How do I vote in an STV or AV election?
+
+That’s easy. You mark a “1″ against the candidate you most prefer, “2″ against your second favourite candidate, etc, until you have no further preferences for any of the remaining candidates.
+
+## How the votes are counted
+
+### Counting votes in AV
+
+The first preference votes for all the candidates are counted. If any candidate has over 50% of the total votes, that candidate is elected. If not, the candidate with the least number of votes is eliminated, and all those votes are redirected to their next highest preference. This continues until one candidate has more voters than all the others put to together; that candidate is then declared the winner.
+
+### Counting votes in STV
+
+STV is the same idea, except that there are multiple winners. So if the election elects N candidates, then you keep eliminating candidates (as with AV) until there at N left.
+
+But sometimes (usually, in fact) a candidate has more than the votes they need to win. For example, consider a 4-seat election where there are 1000 total votes. Four candidates each have 201 votes. These candidates must all be elected, since all other candidates between them can only get 196 votes.  201 is therefore a “magic number” that guarantees that a candidate will be elected (it’s usually called the “quota”).
+
+Every vote above the quota is a surplus vote that could have gone to electing someone else. And in STV, that’s what happens: if a candidate has more votes than the quota, the candidate is elected, and that fraction of each vote that is above the quote is re-allocated to the voter’s next preference. In our example, if the top candidate gets 210 votes, then 9/201 of each vote is re-allocated. STV is usually counted by computer, for speed.
+
+## Further Reading
+
+Wikipedia has some good articles on
+[Single Transferable Vote](http://en.wikipedia.org/wiki/Single_transferable_vote),
+[Alternative Vote](http://en.wikipedia.org/wiki/Alternative_Vote), and
+[voting systems](http://en.wikipedia.org/wiki/Voting_system)
+in general. The
+[Electoral Reform Society](http://www.electoral-reform.org.uk/) is also good.
+
+$$$$$ d'Hondt
+
+The **d'Hondt** method is used to elect MEPs in all regions of the UK except for
+[Northern Ireland](/eresult/ni),
+which uses the [[Single Transferable Vote]] instead.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

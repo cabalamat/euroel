@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# deploy = deploy Euro Election onto the server
+#
+# Usage:
+#    ./deploy
+
+echo "Stopping apache..."
+ssh root@meowc.at /etc/init.d/apache2 stop
+
+SRCDIR=~/proj/euroel
+
+#>>>>> copy euroelection directories across:
+echo Copying `cat VERSION` to server...
+echo "***** Uploading euroelection home directory *****"
+rsync -ptgov $SRCDIR/*\
+             phil@meowc.at:~/proj/euroelection
+echo "***** Uploading markdown/ *****"
+rsync -av $SRCDIR/markdown/*\
+          phil@meowc.at:~/proj/euroelection/markdown
+echo "***** Uploading static/  *****"
+rsync -av $SRCDIR/static/*\
+          phil@meowc.at:~/proj/euroelection/static
+
+echo "Restarting apache..."
+ssh root@meowc.at /etc/init.d/apache2 start
+
+echo "Deployment completed."
+
+#end

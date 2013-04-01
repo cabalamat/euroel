@@ -1,0 +1,39 @@
+README for neweuro
+==================
+
+This is the new version of euro election (from ~/proj/euroel/).
+
+----------------------------------------------------------------------
+URLs
+
+/ = home page
+/make_prediction = page to make prediction from
+/about = information about the site, credits etc
+/allparties = list of all parties
+
+/party/<p> = information about a party. Includes:
+  - name
+  - what regions it will stand in in 2014
+  - link to its Wikipedia article
+  - its reuslts in 2009, by region/aggregate
+
+/eresult/<a> = election result in area a
+For each party:
+  - votes, %votes, seats, %seats, graph of votes
+If an aggregate, state regions
+
+/predresult/<a>?<swing> = predicted result based on a swing
+
+----------------------------------------------------------------------
+Files & Classes
+
+<main.py> = main entry point for Flask
+
+static/ = directory for static stuff (CSS etc)
+
+----------------------------------------------------------------------
+
+
+----------------------------------------------------------------------
+
+/end/

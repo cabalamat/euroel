@@ -1,0 +1,69 @@
+HISTORY for euroelection
+========================
+
+Euroelection (website euroelection.co.uk) is a program for the European
+Election in 2014.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+6-Jan-2013: started HISTORY file. created ~/proj/euroelection/ directory.
+Project not working (due to venv; was mv'ed from ~/proj/neweuro/)
+
+Saved euroelection-0.1.
+
+Changed headers. Saved euroelection-0.1.1.
+
+26-Jan-2013.
+Created <deploy> script to deploy.
+Saved euroelection-0.2.0.
+
+Added <euroelection.wsgi>, saved euroelection-0.2.1
+Site now up, saved euroelection-0.2.2
+Added Google analytics, saved euroelection-0.2.3
+
+28-Jan-2013:
+Added link to blog at top of page.
+
+29-Jan-2013: added logos, text and URLs for many parties.
+Saved euroelection-0.2.4. Deployed.
+
+Write code for adding manifestoes.
+
+4-Feb-2013:
+Added code for articles. Created pages for European Parliament Groups.
+Added lots of logos. Added lots of manifesto pdfs.
+Saved euroelection-0.3.0 (wc *.py says 2981 lines)
+Deployed.
+
+Fixed problem in article.loadArticles() where on the live site it
+was trying to read them from / instead of ~/proj/euroelection/
+Saved euroelection-0.3.2
+
+6-Feb-2013:
+Writing articles. Adding tweets. Saved euroelection-0.3.3
+
+7-Feb-2013:
+Added articles no Europarties.
+Saved euroelection-0.3.4. Deployed.
+
+12-Feb-2013:
+Changed Conservatives and Unionists to Ulster Unionists.
+Made short names for parties and regions in tables.
+Tidied code for names of parties.
+Fixed HTML titles.
+Saved euroelection-0.3.5. Deployed.
+
+13-Feb-2013: do CP/CPA
+change names for groups in European parliament.
+Saved euroelection-0.3.6. Deployed.
+
+17-Feb-2013:
+Started work on new article code <narticle.py>
+Made application name at top left have better nbackground color on
+hover.
+Saved euroelection-0.3.7. Deployed.
+
+
+
+
+/end/
